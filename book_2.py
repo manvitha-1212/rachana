@@ -28,7 +28,7 @@ book_name_1=st.text_input('book_name')
 result =""
 
 if st.button("Predict"): 
-    prediction=reload_model.predict([[book_name]])
+    prediction=reload_model.predict([book_name])
     st.text('suggested book is ')
     st.text(prediction)
 
