@@ -22,7 +22,7 @@ from PIL import Image
 
 reload_model = joblib.load('book_model_1')
 
-book_name_1=st.number_input('book_name')
+book_name_1=st.text_input('book_name')
 
 
 result =""
