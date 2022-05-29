@@ -20,7 +20,7 @@ from PIL import Image
 
 
 
-reload_model = joblib.load('/content/book_model_1')
+reload_model = joblib.load('book_model_1')
 
 book_name_1=st.number_input('book_name')
 
@@ -28,7 +28,7 @@ book_name_1=st.number_input('book_name')
 result =""
 
 if st.button("Predict"): 
-    prediction=reload_model.predict([[book-name]])
+    prediction=reload_model.predict([[book_name]])
     st.text('suggested book is ')
     st.text(prediction)
 
